@@ -22,7 +22,9 @@ function App() {
         <Route path="/projects" exact component={Projects} />
         <Route path="/videos" exact component={Videos} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/404" component={Invalid} />
+        <Route path={() => "/404" || "/admin" || "/any-other-word"}>
+          <Invalid />
+        </Route>
       </Switch>
     </Router>
   );
