@@ -11,21 +11,29 @@ import Invalid from "./components/Invalid";
 function App() {
   return (
     <Router>
-      <Menu />
-      <h1 class="glitch">
-        <span aria-hidden="true">Kenan Alnaser</span>
-        Kenan Alnaser
-        <span aria-hidden="true">Kenan Alnaser</span>
-      </h1>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/projects" exact component={Projects} />
-        <Route path="/videos" exact component={Videos} />
-        <Route path="/contact" exact component={Contact} />
-        <Route path={() => "/404" || "/admin" || "/any-other-word"}>
-          <Invalid />
-        </Route>
-      </Switch>
+      <div id="image">
+        <Menu />
+        <div id="top">
+          <div id="sky"></div>
+        </div>
+        <div id="bottom">
+          <div id="ground"></div>
+        </div>
+        <h1 class="glitch">
+          <span aria-hidden="true">Kenan Alnaser</span>
+          Kenan Alnaser
+          <span aria-hidden="true">Kenan Alnaser</span>
+        </h1>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/videos" exact component={Videos} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path={() => "/404" || "/admin" || "/any-other-word"}>
+            <Invalid />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
