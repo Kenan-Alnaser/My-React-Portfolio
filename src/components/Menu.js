@@ -4,16 +4,16 @@ const Menu = () => {
   return (
     <nav>
       <Link to="/">
-        <li>Home</li>
+        <li className="neon-button">Home</li>
       </Link>
       <Link to="/Projects">
-        <li>Projects</li>
+        <li className="neon-button">Projects</li>
       </Link>
       <Link to="/Videos">
-        <li>Videos</li>
+        <li className="neon-button">Videos</li>
       </Link>
       <Link to="/Contact">
-        <li>Contact</li>
+        <li className="neon-button">Contact</li>
       </Link>
     </nav>
   );

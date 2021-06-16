@@ -17,6 +17,13 @@ function App() {
         Kenan Alnaser
         <span aria-hidden="true">Kenan Alnaser</span>
       </h1>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/projects" exact component={Projects} />
+        <Route path="/videos" exact component={Videos} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/404" component={Invalid} />
+      </Switch>
     </Router>
   );
 }
