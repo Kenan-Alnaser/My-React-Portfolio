@@ -268,3 +268,17 @@ span {
     background-position: 0 25px;
   }
 }
+
+// Media Responsive Queries
+
+// Large Screens
+@media only screen and (min-width: 1824px) {
+  .glitch,
+  span {
+    top: 1rem;
+    left: 1rem;
+  }
+  .neon-button {
+    font-size: 1rem;
+  }
+}
