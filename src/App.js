@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 import Menu from "./components/Menu";
 import Home from "./components/Home";
@@ -19,17 +24,20 @@ function App() {
         <div id="bottom">
           <div id="ground"></div>
         </div>
-        <h1 class="glitch">
+        <h1 className="glitch">
           <span aria-hidden="true">Kenan Alnaser</span>
           Kenan Alnaser
           <span aria-hidden="true">Kenan Alnaser</span>
         </h1>
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route exact path="/">
+            <Redirect to="/" />
+          </Route>
+          <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/videos" exact component={Videos} />
           <Route path="/contact" exact component={Contact} />
-          <Route path={() => "/404" || "/admin" || "/any-other-word"}>
+          <Route path={() => "404" || "admin" || "any-other-word"}>
             <Invalid />
           </Route>
         </Switch>

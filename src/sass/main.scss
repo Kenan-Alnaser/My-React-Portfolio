@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Eater&display=swap");
 
 :root {
   --clr-neon: hsl(257 100% 54%);
@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: sans-serif;
+  font-family: "Bungee Shade", cursive;
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 h2 {
@@ -39,9 +39,27 @@ h2 {
   border: blueviolet 10px double;
   border-radius: 20%;
   padding: 3rem;
-  font-family: "Bungee Shade", cursive;
   text-shadow: 5px 5px black;
 }
+
+h3 {
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  border: purple 1px dashed;
+  border-radius: 10px;
+}
+
+// .invalid {
+//   font-family: "Eater", cursive;
+// }
 
 // Glitchy Name
 
@@ -49,12 +67,11 @@ h2 {
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
-
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
     0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-
   animation: glitch 500ms infinite;
+  font-family: sans-serif;
 }
 
 .glitch,
@@ -121,7 +138,7 @@ span {
 
 .neon-button {
   font-size: 1.5rem;
-
+  font-family: sans-serif;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -267,5 +284,85 @@ span {
   }
   100% {
     background-position: 0 25px;
+  }
+}
+
+// Project Roulette
+.cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 280px;
+  perspective: 750px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+}
+
+.Face:nth-child(1) {
+  --startAngle: 0deg;
+}
+.Face:nth-child(2) {
+  --startAngle: 45deg;
+}
+.Face:nth-child(3) {
+  --startAngle: 90deg;
+}
+.Face:nth-child(4) {
+  --startAngle: 135deg;
+}
+.Face:nth-child(5) {
+  --startAngle: 180deg;
+}
+.Face:nth-child(6) {
+  --startAngle: 225deg;
+}
+.Face:nth-child(7) {
+  --startAngle: 270deg;
+}
+.Face:nth-child(8) {
+  --startAngle: 315deg;
+}
+
+.l .Face {
+  --left: 153px;
+  --speed: 5s;
+  background-position: -300px 0;
+  border-color: #500;
+}
+.m .Face {
+  --left: 0px;
+  --speed: 7s;
+  background-position: -150px 0;
+  border-color: #050;
+}
+.r .Face {
+  --left: -153px;
+  --speed: 6s;
+  background-position: 0px 0;
+  border-color: #005;
+}
+
+.Face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 100px;
+  background-size: 450px 150px;
+  border: solid 3px;
+  backface-visibility: hidden;
+  animation: rotate var(--speed) ease-in-out infinite alternate forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotateX(var(--startAngle))
+      translate3d(var(--left), 0, 125px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(calc(var(--startAngle) + 720deg))
+      translate3d(var(--left), 0, 125px);
   }
 }
