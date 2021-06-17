@@ -55,12 +55,6 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -27rem;
-  left: -35rem;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-content: center;
   color: blue;
 }
 
@@ -119,7 +113,7 @@ span {
 // Nav menu Neon Buttons
 
 .neon-button {
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   display: inline-block;
   cursor: pointer;
@@ -215,7 +209,7 @@ span {
       10px 0;
   filter: drop-shadow(0 0 1px magenta) drop-shadow(0 0 3px magenta)
     drop-shadow(0 0 7px cyan);
-  animation: move 5s linear infinite;
+  animation: move 10s linear infinite;
   opacity: 0.2;
 }
 #bottom {
@@ -253,7 +247,7 @@ span {
     );
   filter: drop-shadow(0 0 1px cyan) drop-shadow(0 0 3px cyan)
     drop-shadow(0 0 7px cyan);
-  animation: move 5s linear infinite;
+  animation: move 10s linear infinite;
 }
 @keyframes move {
   to {
@@ -266,19 +260,5 @@ span {
   }
   100% {
     background-position: 0 25px;
-  }
-}
-
-// Media Responsive Queries
-
-// Large Screens
-@media only screen and (min-width: 1824px) {
-  .glitch,
-  span {
-    top: 1rem;
-    left: 1rem;
-  }
-  .neon-button {
-    font-size: 1rem;
   }
 }
