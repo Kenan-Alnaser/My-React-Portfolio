@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <React.Fragment>
-      <div className="cont">
+      <div className="container">
         <div className="r">
           <div
             className="Face"

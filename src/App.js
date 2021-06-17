@@ -30,10 +30,7 @@ function App() {
           <span aria-hidden="true">Kenan Alnaser</span>
         </h1>
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/" />
-          </Route>
-          <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/videos" exact component={Videos} />
           <Route path="/contact" exact component={Contact} />
