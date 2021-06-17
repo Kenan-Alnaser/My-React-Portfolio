@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
 :root {
   --clr-neon: hsl(257 100% 54%);
   --clr-bg: hsl(323 21% 16%);
@@ -32,8 +34,13 @@ nav {
 
 h2 {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 35%;
+  left: 15%;
+  border: blueviolet 10px double;
+  border-radius: 20%;
+  padding: 3rem;
+  font-family: "Bungee Shade", cursive;
+  text-shadow: 5px 5px black;
 }
 
 // Glitchy Name
