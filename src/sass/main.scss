@@ -62,7 +62,6 @@ h3 {
 a {
   text-decoration: none;
   color: blue;
-  border: purple 1px dashed;
   border-radius: 10px;
 }
 
@@ -94,7 +93,6 @@ a {
 .contactBtn {
   transform: scale(5);
   margin: 3rem;
-  border: none;
 }
 
 .linkedin {
@@ -415,5 +413,80 @@ span {
   to {
     transform: translate(-50%, -50%) rotateX(calc(var(--startAngle) + 720deg))
       translate3d(var(--left), 0, 125px);
+  }
+}
+
+// Media Queries
+
+// Phone
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+  .glitch {
+    font-size: 2rem;
+  }
+  nav {
+    display: inline-block;
+    top: 3rem;
+  }
+  .videoContainer {
+    display: inline-block;
+    top: 10rem;
+  }
+  iframe {
+    height: 10rem;
+    width: 10rem;
+  }
+  .contactBtn {
+    margin: 1rem;
+    transform: scale(3);
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Tablet
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+  .glitch {
+    font-size: 3rem;
+  }
+  nav {
+    display: inline-block;
+    top: 5rem;
+  }
+  .mainContainer {
+    position: absolute;
+    top: 10rem;
+    width: 90%;
+  }
+  .videoContainer {
+    display: inline-block;
+    top: 16rem;
+  }
+  iframe {
+    height: 20rem;
+    width: 16rem;
+  }
+  .contactBtn {
+    margin: 1.5rem;
+    transform: scale(3);
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
