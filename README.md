@@ -1,3 +1,19 @@
+# About this App
+
+A portfolio Website page with information about me, some contact links, some of my videos and a rotating gallery of some of my projects.
+
+Many animations are used as well. Neon Buttons, and a moving synthwave background.
+
+# Page Github Live Link
+
+https://kenan-alnaser.github.io/My-React-Portfolio/
+
+# Screenshots
+
+![Portfolio](./screenshots/portfolio.jpg)
+
+![Portfolio2](./screenshots/portfolio2.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +84,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Citations
+
+Icons (HTML, CSS, JS, React, Facebook, Youtube, LinkedIn, Github) by FontAwesome
+Fonts (Bungee Shade, Eater) by Google Fonts
