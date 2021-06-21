@@ -32,6 +32,15 @@ nav {
   z-index: 2;
 }
 
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+
 h2 {
   position: absolute;
   top: 35%;
