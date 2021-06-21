@@ -87,5 +87,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Citations
 
-Icons (HTML, CSS, JS, React, Facebook, Youtube, LinkedIn, Github) by FontAwesome
-Fonts (Bungee Shade, Eater) by Google Fonts
+Icons (HTML, CSS, JS, React, Facebook, Youtube, LinkedIn, Github) by FontAwesome.
+
+Fonts (Bungee Shade, Eater) by Google Fonts.
