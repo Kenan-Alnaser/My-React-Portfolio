@@ -22,7 +22,6 @@ function App() {
         <h1 className="glitch">
           <span aria-hidden="true">Kenan Alnaser</span>
           Kenan Alnaser
-          <span aria-hidden="true">Kenan Alnaser</span>
         </h1>
         <Switch>
           <Route path="/" exact component={Home} />
