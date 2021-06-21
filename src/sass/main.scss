@@ -450,6 +450,9 @@ span {
     justify-content: center;
     align-items: center;
   }
+  .invalidLink {
+    font-size: 4.5rem;
+  }
 }
 
 // Tablet
@@ -488,5 +491,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .invalidLink {
+    font-size: 4.5rem;
   }
 }
