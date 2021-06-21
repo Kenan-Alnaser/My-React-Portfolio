@@ -10,9 +10,9 @@ https://kenan-alnaser.github.io/My-React-Portfolio/
 
 # Screenshots
 
-![Portfolio](./screenshots/portfolio.jpg)
+![Portfolio](./public/screenshots/portfolio.jpg)
 
-![Portfolio2](./screenshots/portfolio2.jpg)
+![Portfolio2](./public/screenshots/portfolio2.jpg)
 
 # Getting Started with Create React App
 
