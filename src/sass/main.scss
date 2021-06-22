@@ -122,13 +122,14 @@ a {
   animation: glitch 500ms infinite;
   font-family: sans-serif;
   color: black;
+  position: relative;
 }
 
 .glitch,
 span {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .glitch span:first-child {
