@@ -90,3 +90,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Icons (HTML, CSS, JS, React, Facebook, Youtube, LinkedIn, Github) by FontAwesome.
 
 Fonts (Bungee Shade, Eater) by Google Fonts.
+
+Animation Killer Media by https://web.dev/prefers-reduced-motion/
