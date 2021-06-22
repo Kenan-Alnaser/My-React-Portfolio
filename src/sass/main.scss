@@ -425,6 +425,11 @@ span {
   h3 {
     font-size: 1rem;
   }
+  .mainContainer,
+  h2 {
+    top: 10rem;
+    left: 1rem;
+  }
   .glitch {
     font-size: 2rem;
   }
@@ -451,6 +456,11 @@ span {
   }
   .invalidLink {
     font-size: 4.5rem;
+  }
+  .container {
+    transform: scale(0.7);
+    top: 35%;
+    left: -4.5rem;
   }
 }
 
